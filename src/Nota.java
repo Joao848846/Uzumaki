@@ -8,11 +8,11 @@ public class Nota {
 
         Scanner notas = new Scanner(System.in);
         System.out.println("Digite a primeira nota: ");
-         double nota1 = notas.nextInt();
+         double nota1 = notas.nextDouble();
         System.out.println("Digite a segunda nota: ");
-        double nota2 = notas.nextInt();
+        double nota2 = notas.nextDouble();
         System.out.println("Digite a terceira nota: ");
-        double nota3 = notas.nextInt();
+        double nota3 = notas.nextDouble();
 
         double media = (nota1 + nota2 + nota3) / 3;
 
