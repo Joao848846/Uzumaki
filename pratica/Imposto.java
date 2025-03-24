@@ -6,15 +6,17 @@ public class Imposto {
 
     private String nome;
     private double rendaBruta;
+    private double limiteRenda = 2000.00;
 
     public Imposto (double rendaBruta, String nome){
         this.rendaBruta = rendaBruta;
         this.nome = nome;
+
     }
 
     public double calcularImposto(){
         double imposto = 0;
-        if (rendaBruta <= 1400){
+        if (rendaBruta <= limiteRenda){
             imposto = 0;
         } else if (rendaBruta > 1400 && rendaBruta <= 2100){
             imposto = (rendaBruta * 0.1) - 100;
